@@ -8,6 +8,7 @@ app.get('/', (request, response) => {
 
 app.get("/users", (request,response) => {
     const users: User[] = [ { id: 1, name: "Mario", surname: "Rossi"}  ];
+    
     response.json(users);
 });
 
